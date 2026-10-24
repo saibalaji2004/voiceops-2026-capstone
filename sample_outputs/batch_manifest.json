@@ -1,0 +1,44 @@
+{
+  "generated_at_utc": "2026-10-24T15:25:15.723309+00:00",
+  "input_directory": "C:\\Users\\saiba\\Desktop\\voiceops-2026\\demo_audio",
+  "output_directory": "C:\\Users\\saiba\\Desktop\\voiceops-2026\\demo_retest_outputs",
+  "language": "en-IN",
+  "tts_language": "en-IN",
+  "voice": "Kaveri",
+  "shared_session": true,
+  "total_files": 3,
+  "succeeded": 3,
+  "failed": 0,
+  "results": [
+    {
+      "input_file": "C:\\Users\\saiba\\Desktop\\voiceops-2026\\demo_audio\\01_question.m4a",
+      "status": "success",
+      "transcript_file": "C:\\Users\\saiba\\Desktop\\voiceops-2026\\demo_retest_outputs\\01_question.txt",
+      "audio_reply_file": "C:\\Users\\saiba\\Desktop\\voiceops-2026\\demo_retest_outputs\\01_question.wav",
+      "sources_file": "C:\\Users\\saiba\\Desktop\\voiceops-2026\\demo_retest_outputs\\01_question.sources.json",
+      "agent_action": "rag",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash"
+    },
+    {
+      "input_file": "C:\\Users\\saiba\\Desktop\\voiceops-2026\\demo_audio\\02_followup.m4a",
+      "status": "success",
+      "transcript_file": "C:\\Users\\saiba\\Desktop\\voiceops-2026\\demo_retest_outputs\\02_followup.txt",
+      "audio_reply_file": "C:\\Users\\saiba\\Desktop\\voiceops-2026\\demo_retest_outputs\\02_followup.wav",
+      "sources_file": "C:\\Users\\saiba\\Desktop\\voiceops-2026\\demo_retest_outputs\\02_followup.sources.json",
+      "agent_action": "rag",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash"
+    },
+    {
+      "input_file": "C:\\Users\\saiba\\Desktop\\voiceops-2026\\demo_audio\\03_handover.m4a",
+      "status": "success",
+      "transcript_file": "C:\\Users\\saiba\\Desktop\\voiceops-2026\\demo_retest_outputs\\03_handover.txt",
+      "audio_reply_file": "C:\\Users\\saiba\\Desktop\\voiceops-2026\\demo_retest_outputs\\03_handover.wav",
+      "sources_file": "C:\\Users\\saiba\\Desktop\\voiceops-2026\\demo_retest_outputs\\03_handover.sources.json",
+      "agent_action": "create_ticket_success",
+      "provider": null,
+      "model": null
+    }
+  ]
+}

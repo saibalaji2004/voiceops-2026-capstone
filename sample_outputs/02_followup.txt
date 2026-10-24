@@ -1,0 +1,11 @@
+Input file: 02_followup.m4a
+Transcript: does that start from the order date or the delivery date
+
+Agent reply:
+The return window starts on the delivery date, counted in calendar days [RET-2].
+
+Agent action: rag
+Provider: gemini
+Model: gemini-3.6-flash
+Retrieved source labels: RET-3, REF-1, ESC-1, DEL-4, DEL-3, RET-2, RET-8, DEL-1
+Full source evidence: 02_followup.sources.json

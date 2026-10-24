@@ -1,0 +1,13 @@
+Input file: 01_question.m4a
+Transcript: the return window for electronics
+
+Agent reply:
+Hello, I’m ZentroMart’s AI customer-support assistant.
+
+The return window for electronics and accessories is 7 calendar days starting from the delivery date [RET-2]. However, electronics delivered before 1 August 2026 retain the previous 10-day return window [RET-3].
+
+Agent action: rag
+Provider: gemini
+Model: gemini-3.6-flash
+Retrieved source labels: RET-3, FAQ-2, MKS-2, RET-2, DWM-4, Troubleshooting common electronics issues, RET-9, RET-8
+Full source evidence: 01_question.sources.json

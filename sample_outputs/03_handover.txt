@@ -1,0 +1,13 @@
+Input file: 03_handover.m4a
+Transcript: please create a support ticket and connect me with a human agent
+
+Agent reply:
+I’ll submit a handover request to the human support team.
+
+I created support ticket TKTd864ca9850ba41b19b7f5be239c81dc2 for human follow-up. This confirms ticket creation, not that a human has already joined the conversation.
+
+Agent action: create_ticket_success
+Provider: not reported
+Model: not reported
+Retrieved source labels: None reported
+Full source evidence: 03_handover.sources.json

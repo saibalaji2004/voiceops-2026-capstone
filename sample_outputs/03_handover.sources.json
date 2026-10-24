@@ -1,0 +1,13 @@
+{
+  "input_file": "C:\\Users\\saiba\\Desktop\\voiceops-2026\\demo_audio\\03_handover.m4a",
+  "transcript": "please create a support ticket and connect me with a human agent",
+  "reply": "I’ll submit a handover request to the human support team.\n\nI created support ticket TKTd864ca9850ba41b19b7f5be239c81dc2 for human follow-up. This confirms ticket creation, not that a human has already joined the conversation.",
+  "agent_action": "create_ticket_success",
+  "provider": null,
+  "model": null,
+  "sources": [],
+  "tool_result": {
+    "created": true,
+    "ticket_id": "TKTd864ca9850ba41b19b7f5be239c81dc2"
+  }
+}
