@@ -1,0 +1,23 @@
+﻿id,language,question,asr_text,intent,expected_decision,acceptable_decisions,answerable,gold_evidence,hard_negatives,must_include,must_not_include,reference_answer,reply_language,entities,notes,needs_native_review,generated_answer,missing_required,forbidden_found,checklist_pass,request_error
+PQ0002,hi-en,SKU ELE-0012 pe ZentroMart Assured hai kya? Claim kaise karein?,so sku ele-zero zero one to pe zentromart assured hai kya claim kaise karein,warranty,answer,answer,True,WAR-2 ; products.csv:ELE-0012,,12 ; My Orders / app,,"Haan, 12 mahine ki Assured warranty hai; claim app mein My Orders se karein.",hi-en,sku=ELE-0012,,False,"Hello! Main ZentroMart ka customer support AI assistant hoon.
+
+Filhaal mere paas product catalog ya system access nahi hai, isliye main yeh confirm nahi kar sakta ki **SKU ELE-0012** par ""ZentroMart Assured"" hai ya nahi.
+
+**Aap ise kaise check aur claim kar sakte hain:**
+
+1. **Status Check Karein:** ZentroMart app ya website par product page kholkar dekhein ki wahan ""ZentroMart Assured"" ka badge dikh raha hai ya nahi.
+2. **Claim Kaise Karein:** Normally, agar kisi Assured product par issue aata hai, toh aap **'My Orders'** section mein jaakar us order par click kar sakte hain aur **'Return'**, **'Replace'**, ya **'Help'** option select karke claim process start kar sakte hain.
+
+SKU ELE-0012 ki exact details aur specific claim guidance ke liye, kripya ZentroMart customer support team se contact karein.",12,,False,
+PQ0003,en,How fast are refunds to the ZentroMart Wallet?,how fast are refunds to the zentromart wallet,refund_timeline,answer,answer,True,REF-2 ; KB-00.1,FAQ-1,instant / 2 hours / two hours / तुरंत / turant,5 to 7 days ; 5-7 days,"Instant, within 2 hours of initiation.",en,,Trap: FAQ-1 says 5 to 7 days for everything; policy wins (KB-00.1).,False,"Hello! I am ZentroMart's customer support AI assistant.
+
+Generally, refunds credited to a store wallet (like the ZentroMart Wallet) are processed very quickly—often instantly or within 24 to 48 hours once the refund or return is approved. 
+
+However, because I do not currently have access to ZentroMart's specific policy documentation, I cannot confirm the exact timeframe for our platform. If you need precise details regarding a specific refund, I recommend contacting ZentroMart customer support directly.",instant / 2 hours / two hours / तुरंत / turant,,False,
+PQ0004,en,Can I schedule a delivery at midnight?,uh can i schedule a delivery at midnight,unsupported,answer,answer ; escalate,False,,,don't have / do not have / not sure / no information / can't find / not able to find / couldn't find / जानकारी नहीं / pata nahi / jaankari nahi / connect / सहयोगी,,"Sorry, I don't have information about that. I can connect you to a colleague who can help.",en,,Not covered by any document. Do not invent a policy.,False,"Hello! I am ZentroMart's customer support AI assistant.
+
+Generally, standard delivery services operate during regular day and evening hours, though some express or 24/7 services may offer late-night slots depending on your location.
+
+Since I do not currently have access to ZentroMart's specific delivery schedules or local store operating hours, I cannot confirm if a midnight delivery slot is available for your address. 
+
+I recommend checking the available time slots at checkout on the ZentroMart app or website. If you don't see a midnight option there, please contact ZentroMart customer support directly to confirm if special late-night delivery arrangements can be made.",don't have / do not have / not sure / no information / can't find / not able to find / couldn't find / जानकारी नहीं / pata nahi / jaankari nahi / connect / सहयोगी,,False,

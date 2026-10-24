@@ -1,0 +1,30 @@
+﻿id,language,question,expected_decision,acceptable_decisions,answerable,gold_evidence,must_include,must_not_include,reference_answer,generated_answer,missing_required,forbidden_found,checklist_pass,request_error
+PQ0002,hi-en,SKU ELE-0012 pe ZentroMart Assured hai kya? Claim kaise karein?,answer,answer,True,WAR-2 ; products.csv:ELE-0012,12 ; My Orders / app,,"Haan, 12 mahine ki Assured warranty hai; claim app mein My Orders se karein.","Namaste! Main ZentroMart ka AI customer support assistant hoon.
+
+Filhaal mere paas ZentroMart ke live product database ka access nahi hai, isliye main exact SKU **ELE-0012** par ""ZentroMart Assured"" status confirm nahi kar sakta.
+
+Lekin aap ise aasaani se check aur claim kar sakte hain:
+
+1. **Check kaise karein:** 
+   Product detail page par jayein. Agar product par ""ZentroMart Assured"" ka badge dikh raha hai, toh yeh tag is product par applicable hai.
+
+2. **Claim kaise karein (General Process):**
+   * ZentroMart app ya website mein **'My Orders'** section par jayein.
+   * Apne order (SKU ELE-0012) ko select karein.
+   * Agar product mein koi issue hai ya aap claim karna chahte hain, toh **'Return / Replace'** ya **'Help / Support'** option par click karke apni request submit karein.
+
+Specific SKU ki exact jankari aur claim process confirm karne ke liye, kripya ZentroMart ki customer support team se sampark karein ya product page check karein. Kya main aapki kisi aur cheez mein madad kar sakta hoon?",12,,False,
+PQ0003,en,How fast are refunds to the ZentroMart Wallet?,answer,answer,True,REF-2 ; KB-00.1,instant / 2 hours / two hours / तुरंत / turant,5 to 7 days ; 5-7 days,"Instant, within 2 hours of initiation.","Hello! I am ZentroMart's customer support AI assistant.
+
+Typically, refunds credited to an in-app or digital wallet (like a ZentroMart Wallet) are processed very quickly—often instantly or within 24 hours once the refund is approved by the system. 
+
+However, because I do not currently have access to ZentroMart's official internal policy documents, I cannot confirm the exact official processing timeline. If you have a specific refund in progress or need confirmed details, I recommend reaching out directly to ZentroMart customer support.",instant / 2 hours / two hours / तुरंत / turant,,False,
+PQ0004,en,Can I schedule a delivery at midnight?,answer,answer ; escalate,False,,don't have / do not have / not sure / no information / can't find / not able to find / couldn't find / जानकारी नहीं / pata nahi / jaankari nahi / connect / सहयोगी,,"Sorry, I don't have information about that. I can connect you to a colleague who can help.","Hello! I am ZentroMart's customer support AI assistant.
+
+Delivery options generally depend on your location and local operational hours. While some quick-commerce or express services offer late-night deliveries in select areas, standard delivery slots usually operate during daytime and evening hours.
+
+As I don't currently have access to ZentroMart's specific delivery policies or your location details, I cannot confirm whether a midnight delivery slot is available for your address. 
+
+To see if midnight delivery is an option for you:
+1. Check the available delivery time slots during checkout in the ZentroMart app or website.
+2. If you need immediate confirmation, please contact ZentroMart customer support directly.",don't have / do not have / not sure / no information / can't find / not able to find / couldn't find / जानकारी नहीं / pata nahi / jaankari nahi / connect / सहयोगी,,False,

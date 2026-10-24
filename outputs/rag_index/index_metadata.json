@@ -1,0 +1,11 @@
+{
+  "schema_version": "rag-index-v3-product-catalog-hybrid",
+  "fingerprint": "f16a21bd6ae079ec03a9298d714e5a3a71b2d6b1b04685e7072f2f45d37c4cf4",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "chunk_size": 1200,
+  "chunk_overlap": 180,
+  "document_count": 21,
+  "product_record_count": 70,
+  "chunk_count": 175,
+  "embedding_dimensions": 384
+}
