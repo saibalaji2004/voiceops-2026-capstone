@@ -192,21 +192,54 @@ def format_evidence(results: list[dict[str, Any]]) -> str:
 
 
 def collect_sources(results: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """Return unique source-section references for the final result."""
-    sources: dict[tuple[str, str], dict[str, Any]] = {}
+    """Return retrieved chunks with provenance and their actual evidence text.
+
+    Keep separate chunks separate, even when they come from the same section.
+    This allows the batch runner to save the exact evidence retrieved for each
+    answer instead of only saving a shortened list of section references.
+    """
+    sources: dict[tuple[str, ...], dict[str, Any]] = {}
 
     for item in results:
         filename = str(item.get("source_file", "unknown"))
         section_id = str(item.get("section_id", "")).strip()
-        key = (filename, section_id)
+        chunk_id = str(item.get("chunk_id", "")).strip()
+        chunk_number = item.get("chunk_number")
+        sku = str(item.get("sku", "")).strip()
+        evidence_text = str(item.get("text", ""))
+
+        # chunk_id is the best stable identity. For older/catalogue records
+        # without one, use the available provenance and content as a fallback
+        # so unrelated chunks are not accidentally collapsed together.
+        if chunk_id:
+            key = ("chunk_id", chunk_id)
+        else:
+            key = (
+                "fallback",
+                filename,
+                section_id,
+                str(chunk_number or ""),
+                sku,
+                evidence_text,
+            )
 
         candidate = {
+            "chunk_id": chunk_id,
+            "doc_id": str(item.get("doc_id", "")),
+            "title": str(item.get("title", "")),
             "source_file": filename,
+            "source_kind": str(item.get("source_kind", "")),
             "section_id": section_id,
             "section_title": str(item.get("section_title", "")),
             "doc_type": str(item.get("doc_type", "unknown")),
             "status": str(item.get("status", "unknown")),
+            "effective_from": str(item.get("effective_from", "")),
+            "chunk_number": chunk_number,
+            "sku": sku,
             "similarity": float(item.get("similarity", 0.0)),
+            "lexical_score": float(item.get("lexical_score", 0.0)),
+            "hybrid_score": float(item.get("hybrid_score", 0.0)),
+            "text": evidence_text,
         }
 
         if (
